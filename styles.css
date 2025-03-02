@@ -1,0 +1,360 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  font-family: 'Poppins';
+  font-size: 19px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+header:hover {
+  background-color: #283593;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #f5f5f5;
+  transform: translateY(-3px);
+}
+
+/* Page styles */
+.page {
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.page:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.page h2 {
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  transition: text-shadow 0.3s ease;
+}
+
+.page h2:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.page img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #ccc; /* Default border color for all images */
+}
+
+.page img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.page p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.page ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.page ul li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Footer styles */
+footer {
+  background-color: #3f51b5;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer:hover {
+  background-color: #283593;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+/* Color theming for pages */
+#home {
+  background-color: #f5f5f5;
+}
+
+#home h2,
+#home .themed-text {
+  color: #3f51b5;
+}
+
+#home p:hover,
+#home ul li:hover {
+  color: #283593;
+}
+
+#home .page img {
+  border: 2px solid #3f51b5; /* Blue border for home page images */
+}
+
+#global-warming {
+  background-color: #e6f2ff;
+  font-family: 'EB Garamond', serif;
+}
+
+#global-warming h2,
+#global-warming .themed-text {
+  color: #0066cc;
+}
+
+#global-warming p:hover,
+#global-warming ul li:hover {
+  color: #004d99;
+}
+
+#global-warming .page img {
+  border: 2px solid #32cd32; /* Light Sea Green border for global-warming page images */
+}
+
+#mental-health {
+  background-color: #fff0e6;
+}
+
+#mental-health h2,
+#mental-health .themed-text {
+  color: #cc6600;
+}
+
+#mental-health p:hover,
+#mental-health ul li:hover {
+  color: #994d00;
+}
+
+#mental-health .page img {
+  border: 2px solid #ffa500; /* Orange border for mental-health page images */
+}
+
+#ai-bias {
+  background-color: #00ff0044;
+  font-family: 'EB Garamond', serif;
+}
+s #ai-bias h2,
+#ai-bias .themed-text {
+  color: #00d100;
+}
+
+#ai-bias p:hover,
+#ai-bias ul li:hover {
+  color: #00d100;
+}
+
+#ai-bias .page img {
+  border: 2px solid #90ee90; /* Light Green border for ai-bias page images */
+}
+
+/* Header styles */
+header {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition to background color and box shadow */
+}
+
+/* Nav styles */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Add transition to background color, color, and transform */
+}
+
+/* Page styles */
+.page {
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition to box shadow and transform */
+}
+
+/* Image styles */
+.page img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition to transform and box shadow */
+}
+
+/* Theme-specific styles */
+#home.page img {
+  border: 2px solid #3f51b5; /* Blue border for home page images */
+  transition: border-color 0.3s ease; /* Add transition to border color */
+}
+
+#global-warming.page img {
+  border: 2px solid #0022cd; /* Light Sea Green border for global-warming page images */
+  transition: border-color 0.3s ease; /* Add transition to border color */
+}
+
+#mental-health.page img {
+  border: 2px solid #ffa500; /* Orange border for mental-health page images */
+  transition: border-color 0.3s ease; /* Add transition to border color */
+}
+
+#ai-bias.page img {
+  border: 2px solid #90ee90; /* Light Green border for ai-bias page images */
+  transition: border-color 0.3s ease; /* Add transition to border color */
+}
+
+/* ... (existing styles) ... */
+
+.Button {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1mm;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
+  cursor: pointer;
+  margin-left: 73%;
+  margin-right: 7%;
+  margin-bottom: 35px;
+}
+
+.Button:hover {
+  background-color: #3c4cc6;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased box-shadow values */
+  transform: translateY(-3px); /* Increased translateY value */
+}
+
+.Button2 {
+  margin-left: 1010px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1mm;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
+  cursor: pointer;
+}
+
+.Button2:hover {
+  background-color: #283593;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased box-shadow values */
+  transform: translateY(-3px); /* Increased translateY value */
+}
+
+.Button3 {
+  margin-left: 1072px;
+  width: 90px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1mm;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
+  cursor: pointer;
+}
+
+.Button3:hover {
+  background-color: #283593;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased box-shadow values */
+  transform: translateY(-3px); /* Increased translateY value */
+}
+
+/* ... (existing styles) ... */
+
+.stupid-nigga {
+  font-family: 'Poppins', sans-serif;
+}
